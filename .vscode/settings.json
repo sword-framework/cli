@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "target": true
+    },
+    "errorLens.enabled": true,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    },
+    "rust-analyzer.diagnostics.enable": true,
+    "rust-analyzer.imports.granularity.group": "crate",
+    "rust-analyzer.cargo.features": "all",
+}

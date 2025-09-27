@@ -10,6 +10,8 @@ It takes advantage of the tokio ecosystem to bring you performance with nice DX.
 
 ## About
 
+> <iframe width="560" height="315" src="./assets/demo.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="right"></iframe>
+
 This cli provides a quick way to:
 
 - Create a new sword project
@@ -25,6 +27,7 @@ cargo install sword-cli
 ```
 
 Recommended: rename the binary to `sword` or `swd` for easier access:
+
 ```
 # Bash/Zsh:
 alias sword="sword-cli"
@@ -34,4 +37,13 @@ alias sword="sword-cli"
 
 # PowerShell
 Set-Alias sword sword-cli
+```
+
+## CLI use cases
+
+### Create a new project
+
+```bash
+$ swd create
+> What is your project name? my-sword-app
 ```

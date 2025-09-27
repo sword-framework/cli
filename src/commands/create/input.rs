@@ -2,19 +2,15 @@ use inquire::{InquireError, MultiSelect, Select, Text};
 
 #[derive(Debug, Default)]
 pub struct CreateAppInput {
-    name: String,
-    template: String,
-    init_git: bool,
-    extra_libs: Vec<String>,
+    pub name: String,
+    pub template: String,
+    pub init_git: bool,
+    pub extra_libs: Vec<String>,
 }
 
 impl CreateAppInput {
     pub fn has_extra_libs(&self) -> bool {
         !self.extra_libs.is_empty()
-    }
-
-    pub fn is_template_selected(&self) -> bool {
-        self.template != "None"
     }
 
     pub fn collect() -> CreateAppInput {
@@ -63,7 +59,6 @@ impl CreateAppInput {
         println!();
 
         let libs: Vec<&str> = vec![
-            "sqlx (PostgreSQL)",
             "lettre (Email)",
             "jsonwebtoken (JWT Authentication)",
             "shaku (Dependency Injection)",
@@ -73,6 +68,9 @@ impl CreateAppInput {
             "uuid (Unique IDs)",
             "chrono (Date and Time)",
             "reqwest (HTTP Requests)",
+            "redis (Redis Client)",
+            "regex (Regular Expressions)",
+            "thiserror (Error Handling)",
         ];
 
         let extra_libs: Result<Vec<&str>, InquireError> =

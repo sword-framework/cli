@@ -18,13 +18,15 @@ enum Commands {
 }
 
 #[tokio::main]
-async fn main() {
+async fn main() -> anyhow::Result<()> {
     let cli = Cli::parse();
 
     match &cli.command {
-        Commands::Create => CreateAppExecutor::execute(CreateAppInput::collect()),
-        Commands::Run { mode } => {
-            RunAppExecutor::execute(mode.clone()).await.unwrap()
+        Commands::Create => {
+            CreateAppExecutor::execute(CreateAppInput::collect()).await?
         }
+        Commands::Run { mode } => RunAppExecutor::execute(mode.clone()).await?,
     }
+
+    Ok(())
 }

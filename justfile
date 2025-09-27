@@ -15,3 +15,6 @@ build:
 
 build-release:
     cargo build --workspace --release --all-targets
+
+local-install:
+    cargo install --path .

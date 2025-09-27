@@ -30,7 +30,7 @@ async fn install_watchexec() -> anyhow::Result<()> {
     println!("📦Installing watchexec-cli with cargo...");
 
     let mut install_child = Command::new("cargo")
-        .args(&["install", "watchexec-cli"])
+        .args(["install", "watchexec-cli"])
         .stdout(Stdio::inherit())
         .stderr(Stdio::inherit())
         .spawn()?;

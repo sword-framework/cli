@@ -17,7 +17,7 @@ impl RunAppExecutor {
 
         match &executor.mode {
             RunMode::Normal => executor.run_normal_mode().await,
-            RunMode::Watch { options } => executor.run_watch_mode(&options).await,
+            RunMode::Watch { options } => executor.run_watch_mode(options).await,
         }
     }
 

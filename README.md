@@ -1,4 +1,4 @@
-# Sword Command Line Interface
+# Sword CLI
 
 > <img src="https://avatars.githubusercontent.com/u/228345998?s=200&v=4" align="right" width="120"/>
 
@@ -25,21 +25,13 @@ cargo install sword-cli
 ```
 
 Recommended: rename the binary to `sword` or `swd` for easier access:
-
-- Bash/Zsh:
-
-```bash
-alias sword="sword-cli"
 ```
-
-- Fish:
-
-```bash
+# Bash/Zsh:
 alias sword="sword-cli"
-```
 
-- PowerShell:
+# Fish:
+alias sword="sword-cli"
 
-```powershell
+# PowerShell
 Set-Alias sword sword-cli
 ```

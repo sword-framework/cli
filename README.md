@@ -1,8 +1,10 @@
 # Sword CLI
 
-> <img src="./assets/demo.gif" width="500" align="right" />
+> <img src="https://avatars.githubusercontent.com/u/228345998?s=200&v=4" align="right" width="120"/>
 
-Structured web framework for rust built on top of axum.
+Structured web framework for rust built on top of axum.  
+Designed to build server application with less boilerplate and more simplicity.  
+It takes advantage of the tokio ecosystem to bring you performance with nice DX.
 
 This cli provides a quick way to:
 
@@ -10,8 +12,12 @@ This cli provides a quick way to:
 - Add modules to an existing sword project
 - Run a sword project
 
-> Sword is in active development, expect breaking changes.
+> Sword is in active development, expect breaking changes.  
 > The CLI is in early stage expect bugs and missing features.
+
+## Demo
+
+> <img src="./assets/demo.gif" width="1000" />
 
 ## Installation
 

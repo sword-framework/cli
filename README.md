@@ -1,22 +1,17 @@
 # Sword CLI
 
-> <img src="https://avatars.githubusercontent.com/u/228345998?s=200&v=4" align="right" width="120"/>
+> <img src="./assets/demo.gif" width="500" align="right" />
 
-Structured web framework for rust built on top of axum.  
-Designed to build server application with less boilerplate and more simplicity.  
-It takes advantage of the tokio ecosystem to bring you performance with nice DX.
-
-> Sword is in active development, expect breaking changes.
-
-## About
-
-> <iframe width="560" height="315" src="./assets/demo.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="right"></iframe>
+Structured web framework for rust built on top of axum.
 
 This cli provides a quick way to:
 
 - Create a new sword project
 - Add modules to an existing sword project
 - Run a sword project
+
+> Sword is in active development, expect breaking changes.
+> The CLI is in early stage expect bugs and missing features.
 
 ## Installation
 
